@@ -1,0 +1,42 @@
+<div id="primary-nav" class="primary-nav row"> 
+
+  <nav role="navigation" id="dl-menu" class="columns large-12" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <!-- Start primary-nav --> 
+    <h2 class="accessibility-text">Main menu</h2>  
+
+    <ul>
+      {% if page.active == "home" %}
+          <li class="active"><a href="#">Home</a></li>
+      {% else %}
+          <li><a href="/">Home</a></li>
+      {% endif %}
+      {% if page.active == "UX" %}
+          <li class="active"><a href="/UX/">UX</a></li>
+      {% else %}
+          <li><a href="/UX/">UX</a></li>
+      {% endif %}
+      {% if page.active == "Development" %}
+          <li class="active"><a href="/development/">Development</a></li>
+      {% else %}
+          <li><a href="/development/">Development</a></li>
+      {% endif %}
+      {% if page.active == "Downloads" %}
+          <li class="active"><a href="/downloads/">Downloads</a></li>
+      {% else %}
+          <li><a href="/downloads/">Downloads</a></li>
+      {% endif %}
+      {% if page.active == "Blog" %}
+          <li class="active"><a href="/blog/">Blog</a></li>
+      {% else %}
+          <li><a href="/blog/">Blog</a></li>
+      {% endif %}
+      {% if page.active == "Contact" %}
+          <li class="active"><a href="/contact/">Contact</a></li>
+      {% else %}
+          <li><a href="/contact/">Contact</a></li>
+      {% endif %}
+    </ul>
+
+  </nav>
+ 
+</div>

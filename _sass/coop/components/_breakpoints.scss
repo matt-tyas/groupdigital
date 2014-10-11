@@ -1,0 +1,18 @@
+#breakpoint {
+	position: absolute;
+	left: -99999px;
+	width: 0;
+}
+@media #{$medium} {
+
+	#breakpoint {
+		width: 1px;
+	}
+
+}
+
+@media #{$large} {
+	#breakpoint {
+		width: 2px;
+	}
+}

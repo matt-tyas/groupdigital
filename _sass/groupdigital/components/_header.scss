@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    $Header
+\*------------------------------------*/
+
+.site-header {
+  min-height: 100px;
+  padding: 2em 0;
+}
+
+.site-title {
+  display: block;
+  margin: 0;
+  @extend .brand-font; 
+  //color: $co-op-blue;
+  font-size: emCalc(32px);
+}  

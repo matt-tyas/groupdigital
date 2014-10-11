@@ -1,0 +1,44 @@
+.split.button.reverse {
+	
+	&.small {
+		padding-left: 3.9375em;
+		padding-right: 1.125em;
+	}
+
+	&.medium {
+		padding-left: 3em;
+		padding-right: 1.125em;
+	}
+
+	&.large {
+		padding-left: 3em;
+		padding-right: 1em;
+	}
+
+	span {
+		left: 0;
+		right: auto;
+		border-radius: 10px 0 0 10px;
+		&.icon-left_arrow:before {
+			left: 41%;
+			top: 22%;
+			border-color: transparent white transparent transparent !important;
+			border-right-style: solid;
+		}
+		&:before {
+			left: 60%;
+		}
+	
+	}
+
+}
+
+// IE8 split button border fix 
+.lt-ie9 .split span {
+	border: 2px solid white;
+	&.icon-left_arrow:before {
+		left: 35% !important;
+		top: 19% !important;
+	}
+}
+

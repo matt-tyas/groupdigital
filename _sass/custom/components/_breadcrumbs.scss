@@ -1,0 +1,9 @@
+.breadcrumbs {
+	margin-bottom: 0;
+	border-bottom: 1px solid $core-color-grey-2;
+	a, span {
+		&:hover {
+			text-decoration: $crumb-link-decor; 
+		}
+	}
+}

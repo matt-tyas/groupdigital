@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import "funeralcare/variables"; 
+
+// Custom Funeralcare Components
+@import "funeralcare/components/main";
+@import "funeralcare/components/header";
+@import "funeralcare/components/primary-nav";
+@import "funeralcare/components/footer";
+@import "funeralcare/components/type"; 
+@import "funeralcare/components/buttons";
+@import "funeralcare/components/forms";
+@import "funeralcare/components/tables";
+
+@import "funeralcare/components/blocks/block-themes";
+@import "funeralcare/components/blocks/generic-block";
+@import "funeralcare/components/blocks/page-title-block";
+
+@import "funeralcare/components/modules";  
+@import "funeralcare/components/modules/my-account"; 
+@import "funeralcare/components/modules/find-contact-funeral-care";    
+@import "funeralcare/components/modules/breadcrumb"; 

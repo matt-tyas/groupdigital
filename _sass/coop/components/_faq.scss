@@ -1,0 +1,115 @@
+.expand-accordion {
+	font-size: emCalc(13px);
+	margin: 0 0 30px 0;
+	@extend .dot-link;
+
+	&.top {
+		margin-top: -47px;
+	}
+}
+
+.faq.accordion {
+
+	border-top: none;
+	margin-bottom: 30px;
+
+	* {
+		-webkit-backface-visibility: visible;
+	  	-moz-backface-visibility:    visible;
+	  	-ms-backface-visibility:     visible;
+	  	backface-visibility:    	 visible;
+	}
+
+	h2 {
+		position: relative;
+		font-size: emCalc(20px);
+		position: relative;
+		padding-right: 60px !important;
+
+		&:after {
+			content: "Show answer";
+			@extend .dot-link;
+			font-size: emCalc(13);
+			float: right;
+			margin-top: -11px;
+			line-height: 1;
+			top: 50%;
+			position: absolute;
+			right: 50px;
+			display: none;
+		}
+
+		&:before {
+			display: block;
+			position: absolute;
+			content: " ";
+			right: 30px;
+			top: 50%;
+			margin-top: -8px;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 12px 8px 0 8px;
+			border-color: $core-color-blue transparent transparent transparent;
+			zoom: 1;
+		}
+
+		span {
+			float: right;
+		}
+	}
+
+	section {
+		margin-bottom: 5px;
+		h2 {
+			border-top: 1px solid #ccc !important;
+		}
+	}
+
+	section.active > h2:before {
+		border-width: 0 8px 12px 8px;
+		border-color: transparent transparent $core-color-blue transparent;
+	}
+
+	section.active {
+
+			.content {
+				border-top: none;
+				background: $section-title-bg-active;
+			}
+
+			h2 {
+				border-top: 1px solid #ccc !important;
+			border-bottom: none;
+				&:after {
+					content: "Hide answer";
+				}
+			}
+	}
+
+	a {
+		@extend .dot-link;
+	}
+}
+
+.no-js .faq.accordion {
+	h2 {
+		&:before, &:after {
+			display: none;
+		}
+	}
+}
+
+.no-js .expand-accordion {
+	display: none;
+}
+
+@media #{$medium} {
+	
+	.faq.accordion h2 {
+		padding-right: 140px !important;
+		&:after {
+			display: block;
+		}
+	}
+}

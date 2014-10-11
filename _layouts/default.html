@@ -1,0 +1,32 @@
+<!--[if HTML5]><![endif]-->
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-gb"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-gb"> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body itemtype="http://schema.org/WebPage" id="top">
+
+    <div id="wrapper"><!-- Start wrapper -->
+
+      {% include header.html %}
+
+      {% include primary-nav.html %}
+
+      <div role="main" id="main" class="main  main--content">
+        
+        {{ content }}
+        
+      </div>
+
+      {% include footer.html %}
+      
+    </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script> 
+  <script src="js/production.js"></script>
+  <!--[if lte IE 7]><script src="js/ie/lte-ie7.js"></script><![endif]-->
+  </body>
+
+</html>

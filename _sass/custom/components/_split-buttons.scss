@@ -1,0 +1,17 @@
+﻿/*.split.button span:before {
+	border: none;
+	content: "\e627";
+}*/
+
+.split.medium.button span:before {
+	left: 50%;
+}
+
+.split.button.reverse span.icon-back-arrow:before {
+	width: 0; 
+	height: 0; 
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent; 
+	border-right:7px solid #fff; 
+	left: 15px;
+}

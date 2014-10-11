@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    $Group Digital Variables
+\*------------------------------------*/
+
+/* Basic vertical rhythm 
+------------------------ */
+
+$base-spacing-unit: emCalc(24);
+$half-spacing-unit: $base-spacing-unit /2;
+
+/* Type helpers 
+--------------- */
+
+$milli-font-size: emCalc(12);
+$micro-font-size: emCalc(10);
